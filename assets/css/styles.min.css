@@ -32,6 +32,6 @@
 @media (max-width: 767px){
     #background-video{
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
