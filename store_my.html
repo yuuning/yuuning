@@ -5,70 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yuuning | Store MY</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splides = document.querySelectorAll('.splide');
+            splides.forEach(function (splide) {
+                new Splide(splide, {
+                    type: 'loop',
+                    perPage: 1,
+                    perMove: 1,
+                    autoplay: false,
+                    interval: 3000,
+                }).mount();
+            });
+        });
+    </script>
+
 </head>
 <body class="bg-gray-900 text-white p-6">
     <div class="container mx-auto">
-        <h1 class="text-4xl font-bold mb-6">Yuuning | Store</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Product Card -->
-            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://via.placeholder.com/300" alt="Product Image">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Art Print 1</h2>
-                    <p class="text-gray-400 mb-2">A beautiful art print of a modern abstract painting.</p>
-                    <p class="text-gray-300 font-bold mb-4">$25.00</p>
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Buy on Stripe</button>
-                </div>
-            </div>
-            <!-- Product Card -->
-            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://via.placeholder.com/300" alt="Product Image">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Art Print 2</h2>
-                    <p class="text-gray-400 mb-2">A stunning art print featuring a landscape painting.</p>
-                    <p class="text-gray-300 font-bold mb-4">$30.00</p>
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Buy on Stripe</button>
-                </div>
-            </div>
-            <!-- Product Card -->
-            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://via.placeholder.com/300" alt="Product Image">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Art Print 3</h2>
-                    <p class="text-gray-400 mb-2">An elegant art print of a classical sculpture.</p>
-                    <p class="text-gray-300 font-bold mb-4">$20.00</p>
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Buy on Stripe</button>
-                </div>
-            </div>
-            <!-- Additional Product Cards -->
-            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://via.placeholder.com/300" alt="Product Image">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Art Print 4</h2>
-                    <p class="text-gray-400 mb-2">A vibrant art print of a floral arrangement.</p>
-                    <p class="text-gray-300 font-bold mb-4">$35.00</p>
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Buy on Stripe</button>
-                </div>
-            </div>
-            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://via.placeholder.com/300" alt="Product Image">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Art Print 5</h2>
-                    <p class="text-gray-400 mb-2">A detailed art print of a cityscape.</p>
-                    <p class="text-gray-300 font-bold mb-4">$40.00</p>
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Buy on Stripe</button>
-                </div>
-            </div>
-            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="https://via.placeholder.com/300" alt="Product Image">
-                <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Art Print 6</h2>
-                    <p class="text-gray-400 mb-2">A whimsical art print of a fantastical creature.</p>
-                    <p class="text-gray-300 font-bold mb-4">$28.00</p>
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Buy on Stripe</button>
-                </div>
-            </div>
+
+        <div class="container mb-5 mx-auto flex items-center">
+            <img src="/assets/img/yuuning.png" alt="Logo" class="rounded-full w-10 h-10 mr-2">
+            <h1 class="text-4xl font-bold">Yuuning | Store</h1>
         </div>
+        <a href="/store_choose.html" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium py-2 px-4 rounded inline-block mb-5">
+          Back
+        </a>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Product Card -->
+            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden relative">
+                <div class="splide" aria-label="Product Images">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_hardcover/hard0.jpg" alt="Product Image 1">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_hardcover/hard1.jpg" alt="Product Image 2">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_hardcover/hard2.jpg" alt="Product Image 3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Dear Alice [Hardcover]</h2>
+                    <p class="text-gray-400 mb-2">Graphic novel / Comic book <br> Size: 8.5" x 5.5" <br> Pages: 198 <br> Genre: Slice of life, Coming of Age <br> Rated: Ages 13+</p>
+                </div>
+                <div class="p-4">
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Buy on Stripe</button>
+                </div>
+            </div>
+
+            <!-- Product Card -->
+            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden relative">
+                <div class="splide" aria-label="Product Images">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_softcover/soft1.jpg" alt="Product Image 1">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_softcover/soft2.jpg" alt="Product Image 2">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_softcover/soft3.jpg" alt="Product Image 3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Dear Alice [Softcover]</h2>
+                    <p class="text-gray-400 mb-2">Graphic novel / Comic book <br> Size: 8.5" x 5.5" <br> Pages: 198 <br> Genre: Slice of life, Coming of Age <br> Rated: Ages 13+</p>
+                </div>
+                <div class="p-4">
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Buy on Stripe</button>
+                </div>
+            </div>
+
+            <!-- Product Card -->
+            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden relative">
+                <div class="splide" aria-label="Product Images">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_hardcover_sticker_combo/HARD + STICKER COMBO.jpg" alt="Product Image 1">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_sticker_sheet/300X300.jpg" alt="Product Image 2">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_sticker_sheet/sticker.jpg" alt="Product Image 3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Dear Alice [Hardcover] + Sticker Combo</h2>
+                    <p class="text-gray-400 mb-2">Graphic novel / Comic book <br> Size: 8.5" x 5.5" <br> Pages: 198 <br> Genre: Slice of life, Coming of Age <br> Rated: Ages 13+ <br>  Comes with a stickers sheet</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Buy on Stripe</button>
+                </div>
+            </div>
+
+            <!-- Product Card -->
+            <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden relative">
+                <div class="splide" aria-label="Product Images">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_softcover_sticker_combo/SOFT + STICKER COMBO.jpg" alt="Product Image 1">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_sticker_sheet/300X300.jpg" alt="Product Image 2">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="w-full h-92 object-cover" src="/assets/store/dear_alice_sticker_sheet/sticker.jpg" alt="Product Image 3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Dear Alice [Softcover] + Sticker Combo</h2>
+                    <p class="text-gray-400 mb-2">Graphic novel / Comic book <br> Size: 8.5" x 5.5" <br> Pages: 198 <br> Genre: Slice of life, Coming of Age <br> Rated: Ages 13+ <br>  Comes with a stickers sheet</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Buy on Stripe</button>
+                </div>
+            </div>
+
+
     </div>
     <!-- Footer -->
         <div class="container mx-auto mt-6 py-4 text-center">

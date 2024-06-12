@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-300 p-6">
+
+
+    <div class="min-h-screen flex flex-col items-center justify-center">
+        <div class="container items-center mx-auto">
+            <a href="/" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium py-2 px-4 rounded inline-block mb-5">
+                Back
+            </a>
+            <a href="https://github.com/yuuning/yuuning" class="bg-gray-800 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded inline-block">
+              View Source on GitHub
+            </a>
+        </div>
+        <h1 class="text-4xl font-bold mb-8">Welcome to my store!</h1>
+        <div class="space-y-4">
+            <p class="text-lg">Please choose your location:</p>
+            <button id="myButton" class="bg-green-700 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">I am in Malaysia</button>
+            <button id="seaButton" class="bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">I am in Southeast Asia</button>
+            <button id="otherButton" class="bg-yellow-700 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">Other Location</button>
+        </div>
+        <div id="seaCountries" class="mt-8">
+            <h2 class="text-2xl font-bold">Supported Southeast Asia Countries</h2>
+            <ul class="list-disc list-inside">
+                <li>Brunei</li>
+                <li>Cambodia</li>
+                <li>Indonesia</li>
+                <li>Laos</li>
+                <li>Malaysia</li>
+                <li>Myanmar</li>
+                <li>Philippines</li>
+                <li>Singapore</li>
+                <li>Thailand</li>
+                <li>Vietnam</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            window.location.href = 'store_my.html';
+        });
+
+        document.getElementById('seaButton').addEventListener('click', function() {
+            window.location.href = 'store_sea.html';
+        });
+
+        document.getElementById('otherButton').addEventListener('click', function() {
+            window.location.href = 'https://www.amazon.com';
+        });
+    </script>
+</body>
+</html>
