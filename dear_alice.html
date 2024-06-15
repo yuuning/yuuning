@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dear Alice</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/aspect-ratio@0.4.2/src/index.min.js"></script>
 </head>
 
-<body class="bg-gray-100 text-gray-900 p-6">
+<body class="bg-black text-white p-6">
 
     <!-- Header -->
     <div class="container mx-auto">
@@ -24,7 +25,7 @@
             <!-- Dear Alice Section -->
             <section class="text-center mb-8">
                 <h2 class="text-3xl font-bold">DEAR ALICE</h2>
-                <p class="mt-2 text-gray-600">
+                <p class="mt-2 text-gray-200">
                     Genre: Slice of life, Coming of Age
                     <br>
                     Age Rating: Ages 13+
@@ -37,37 +38,30 @@
             </section>
 
             <!-- Video Teaser -->
-            <section class="bg-black text-white py-12 mb-8">
+            <section class="bg-black text-white mb-8">
                 <div class="container mx-auto">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/i1wjzSbxrjI?si=8p7CHPirMg75Srym" title="Video Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="relative" style="padding-top: 56.25%">
+                      <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/i1wjzSbxrjI?si=8p7CHPirMg75Srym" frameborder="0"></iframe>
+                    </div>
                 </div>
             </section>
 
             <!-- Product Section -->
-            <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-gray-900">
                 <!-- Softcover -->
-                <div class="bg-white shadow p-4">
+                <div class="bg-gray-100 shadow p-4">
                     <img src="/assets/store/dear_alice_softcover/soft1.jpg" alt="Softcover" class="w-full mb-4">
                     <h3 class="text-xl font-bold">SOFTCOVER</h3>
-                    <p class="mt-2 text-gray-600">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
                 </div>
                 <!-- Hardcover -->
-                <div class="bg-white shadow p-4">
+                <div class="bg-gray-100 shadow p-4">
                     <img src="/assets/store/dear_alice_hardcover/hard0.jpg" alt="Hardcover" class="w-full mb-4">
                     <h3 class="text-xl font-bold">HARDCOVER</h3>
-                    <p class="mt-2 text-gray-600">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
                 </div>
                 <!-- E-Book -->
-                <div class="bg-white shadow p-4">
+                <div class="bg-gray-100 shadow p-4">
                     <img src="/assets/store/dear_alice_hardcover/hard0.jpg" alt="E-Book" class="w-full mb-4">
                     <h3 class="text-xl font-bold">E-BOOK</h3>
-                    <p class="mt-2 text-gray-600">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
                 </div>
             </section>
 
@@ -105,18 +99,18 @@
 
             <!-- About Me Section -->
             <section class="bg-white mb-8">
-                <div class="grid grid-cols-1 grid-flow-row-dense grid-cols-3 gap-0 ">
-                    <div class="bg-stone-300 content-center text-center">
-                        <h2 class="font-bold">ABOUT ME</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 ">
+                    <div class="col-span-2 lg:order-2">
+                        <img src="/assets/store/salesjourney/my face.jpg" alt="Yuuning" class="w-full">
+                    </div>
+                    <div class="bg-stone-300 content-center text-center lg:order-1 lg:my-0 my-5 text-black">
+                        <h2 class="font-bold text-3xl">ABOUT ME</h2>
                         <p class="justify-center mx-5">yuuning is a webcomic artist & youtuber from Malaysia. Her webcomics have amassed more than 500,000 reads while her Youtube channel boasts more than 1 million views impressively. 
                         <br>
                         Currently residing in Germany with her family, yuuning remains steadfast in her passion for video editing and storytelling virtually. When yuuning isn’t working, she is always searching for the next best cozy open-world game to indulge in.
                         <br>
                         @yuuning.com
                         </p>
-                    </div>
-                    <div class="col-span-2">
-                        <img src="/assets/store/salesjourney/my face.jpg" alt="Yuuning" class="w-full">
                     </div>
                 </div>
             </section>
