@@ -3,47 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose Your Store</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Yuuning | Store</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-stone-900 text-white p-6">
-
+<body class="bg-stone-900 text-stone-100 p-6">
 
     <div class="container mx-auto">
-        <div class="container mb-5 mx-auto flex items-center">
-            <img src="/assets/img/yuuning.png" alt="Logo" class="rounded-full w-10 h-10 mr-2">
-            <h1 class="text-4xl font-bold"><a href="/">Yuuning </a>| Store</h1>
+        <div class="container mb-5 mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="/assets/img/yuuning.png" alt="Logo" class="rounded-full w-10 h-10 mr-2">
+                <h1 class="text-4xl font-bold"><a href="/">Yuuning </a>| Store</h1>
+            </div>
+            <!--
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="/dear_alice.html" class="text-lg text-gray-400 hover:text-stone-100">Dear Alice</a></li>
+                    </ul>
+                </nav>
+            -->
         </div>
     </div>
+
     <div class="mt-20 flex flex-col items-center justify-center text-center">
         <img class="h-40 mr-2 mb-5"src="/assets/img/yt thumb boohk teaser.jpg" alt="">
         <h1 class="text-4xl font-bold mb-8">Welcome to my store!</h1>
         <div class="space-y-4">
-            <p class="text-md">Physical Book + Malaysia and SEA countries</p>
-            <a href="/store_my.html" id="myButton" class="block bg-gray-100 hover:bg-white text-black font-bold py-2 px-4 rounded text-center">I am in Malaysia</a>
-            <a href="/store_sea.html" id="seaButton" class="block bg-gray-100 hover:bg-white text-black font-bold py-2 px-4 rounded text-center">I am in Southeast Asia</a>
-            <p class="text-md">Physical Book & Ebook + International Shipping</p>
-            <a href="https://www.amazon.com/dp/B0D5HPXWZJ?ref_=cm_sw_r_cp_ud_dp_SJWBFDWW0PSDFJZFATYE" id="otherButton" class="block bg-gray-100 hover:bg-white text-black font-bold py-2 px-4 rounded text-center">Other Location | Amazon</a>
+            <a href="https://www.amazon.com/dp/B0D5HPXWZJ" class="block bg-gray-100 hover:bg-stone-100 text-black font-bold py-2 px-4 rounded text-center">Amazon | E-book | International</a>
+            <a href="/store_my.html" class="block bg-gray-100 hover:bg-stone-100 text-black font-bold py-2 px-4 rounded text-center">I am in Malaysia</a>
+            <a href="/store_sea.html" class="block bg-gray-100 hover:bg-stone-100 text-black font-bold py-2 px-4 rounded text-center">I am in Southeast Asia</a>
         </div>
     </div>
 
     <!-- Footer -->
     <div class="container mx-auto mt-10 py-4 text-center">
-        <p>For support, reach out to <a href="yuuningart+storesupport@gmail.com">yuuningart+storesupport@gmail.com</a></p>
         <p>&copy; 2024 Yuuning. All rights reserved.</p>
     </div>
-    <script>
-        document.getElementById('myButton').addEventListener('click', function() {
-            window.location.href = 'store_my.html';
-        });
-
-        document.getElementById('seaButton').addEventListener('click', function() {
-            window.location.href = 'store_sea.html';
-        });
-
-        document.getElementById('otherButton').addEventListener('click', function() {
-            window.location.href = 'https://www.amazon.com';
-        });
-    </script>
 </body>
 </html>

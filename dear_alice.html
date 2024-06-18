@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dear Alice</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Yuuning | Dear Alice</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-stone-900 text-white p-6">
+<body class="bg-stone-900 text-stone-100 p-6">
 
     <!-- Header -->
     <div class="container mx-auto">
@@ -21,21 +25,14 @@
 
         <!-- Main Content -->
         <main class="container mx-auto my-8">
+
             <!-- Dear Alice Section -->
-            <section class="bg-stone-800 text-center mb-8 text-white p-10 rounded-lg shadow-lg">
-                <h2 class="text-4xl font-bold mb-4">DEAR ALICE</h2>
-                <p class="text-lg font-semibold mb-2">Genre: Slice of life, Coming of Age</p>
-                <p class="text-lg font-semibold mb-4">Age Rating: Ages 13+</p>
-                <p class="leading-relaxed max-w-2xl mx-auto">
-                    One day, Alice mysteriously drops out of school and isolates herself from the world. Through heartfelt letters, her friend “Lucky” reaches out to her in an attempt to rekindle their friendship. As they navigate life together, their letters become a beacon through their struggles.
-                    <br><br>
-                    Based on the webcomic from Webtoon & Tapas amassed over 500,000 views accumulated and more, now available in a newly re-illustrated print format.
-                </p>
+            <section class="text-center text-stone-100 p-5 rounded-lg shadow-lg">
+                <h1 class="text-4xl font-bold mb-4">DEAR ALICE <p class="text-stone-300 text-2xl">BY YUUNING</p></h1>
             </section>
 
-
             <!-- Video Teaser -->
-            <section class="bg-black text-white mb-8">
+            <section class="bg-black text-stone-100 mb-8">
                 <div class="container mx-auto">
                     <div class="relative" style="padding-top: 56.25%">
                       <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/i1wjzSbxrjI?si=8p7CHPirMg75Srym" frameborder="0"></iframe>
@@ -43,8 +40,19 @@
                 </div>
             </section>
 
+            <!-- Dear Alice Section -->
+            <section class="bg-stone-800 text-center justify-left mb-8 text-stone-100 p-10 rounded-lg shadow-lg">
+                <p class="text-lg font-semibold mb-2">Genre: Slice of life, Coming of Age</p>
+                <p class="text-lg font-semibold mb-4">Age Rating: Ages 13+</p>
+                <p class="leading-relaxed max-w-2xl mx-auto">
+                    One day, Alice mysteriously drops out of school and isolates herself from the world. Through heartfelt letters, her friend “Lucky” reaches out to her in an attempt to rekindle their friendship. As they navigate life together, their letters become a beacon through their struggles.
+                    <br><br>
+                    Based on the webcomic from <a href="https://www.webtoons.com/en/canvas/dear-alice-completed/list?title_no=391029">Webtoon</a> & <a href="https://tapas.io/series/dear-alice/info">Tapas</a> amassed over 500,000 views accumulated and more, now available in a newly re-illustrated print format.
+                </p>
+            </section>
+
             <!-- Product Section -->
-            <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-white text-center">
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-stone-100 text-center">
                 <!-- Softcover -->
                 <div class="bg-stone-800 shadow p-4 shadow-lg rounded-lg">
                     <img src="/assets/store/dear_alice_softcover/soft1.jpg" alt="Softcover" class="w-full mb-4 rounded-lg">
@@ -62,18 +70,21 @@
                 </div>
             </section>
 
-                        <!-- Store Link Section -->
-            <section class="mb-8 text-white text-center">
-                <h3 class="text-2xl font-bold mb-4">Get Your Copy Now!</h3>
+            <!-- Store Link Section -->
+            <section class="mb-8 text-stone-100 items-center text-center">
+                <h2 class="text-2xl font-bold mb-4">Get Your Copy Now!</h2>
                 <p class="mb-6">Available in Softcover, Hardcover, and E-Book formats</p>
-                <a href="/store.html" class="bg-gray-100 hover:bg-white text-black font-bold py-4 px-5 rounded-lg">
-                    Visit The Store
-                </a>
+                <div class="flex flex-col items-center justify-center text-center">
+                    <div class="space-y-4">
+                        <a href="https://www.amazon.com/dp/B0D5HPXWZJ" class="block bg-gray-100 hover:bg-stone-100 text-black font-bold py-2 px-4 rounded text-center">Amazon | E-book | International</a>
+                        <a href="/store_my.html" class="block bg-gray-100 hover:bg-stone-100 text-black font-bold py-2 px-4 rounded text-center">I am in Malaysia</a>
+                        <a href="/store_sea.html" class="block bg-gray-100 hover:bg-stone-100 text-black font-bold py-2 px-4 rounded text-center">I am in Southeast Asia</a>
+                    </div>
+                </div>
             </section>
 
-
             <!-- Explore Section -->
-            <section class="bg-black text-white rounded-lg">
+            <section class="bg-black text-stone-100 rounded-lg">
                 <div class="container mx-auto text-center">
                     <div>
                         <img src="/assets/store/salesjourney/0amazon kdp promo0.png" alt="Explore the world of Alice" class="w-full mb-4 object-cover mt-4 rounded-lg">
@@ -105,27 +116,29 @@
             </section>
 
             <!-- About Me Section -->
-            <section class="bg-stone-200 mb-8 rounded-lg">
+            <section class="bg-stone-800 mb-8 rounded-lg">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 ">
                     <div class="col-span-2 lg:order-2">
                         <img src="/assets/store/salesjourney/my face.jpg" alt="Yuuning" class="w-full rounded-t-lg lg:rounded-t-none lg:rounded-tr-lg lg:rounded-r-lg ">
                     </div>
-                    <div class="content-center text-center lg:order-1 lg:my-0 my-5 text-black">
+                    <div class="content-center text-center lg:order-1 lg:my-0 my-5 text-stone-100">
                         <h2 class="font-bold text-3xl">About Me</h2>
-                        <p class="leading-relaxed max-w-2xl justify-center mx-5">Yuuning is a webcomic artist & youtuber from Malaysia. Her webcomics have amassed more than 500,000 reads while her Youtube channel boasts more than 1 million views impressively. 
+                        <p class="text-lg leading-relaxed max-w-2xl justify-center mx-5">Yuuning is a webcomic artist & youtuber from Malaysia. Her webcomics have amassed more than 500,000 reads while her Youtube channel boasts more than 1 million views impressively. 
                         <br>
-                        Currently residing in Germany with her family, yuuning remains steadfast in her passion for video editing and storytelling virtually. When yuuning isn’t working, she is always searching for the next best cozy open-world game to indulge in.
                         <br>
-                        @yuuning.com
+                        Currently residing in Germany with her family, Yuuning remains steadfast in her passion for video editing and storytelling virtually. When Yuuning isn’t working, she is always searching for the next best cozy open-world game to indulge in.
+                        <br>
+                        <br>
+                        @<a href="https://yuuning.com">yuuning.com</a>
                         </p>
                     </div>
                 </div>
             </section>
         </main>
 
-        <section class="mb-8 text-white text-center">
-            <a href="/store.html" class="bg-gray-100 hover:bg-white text-black font-bold py-4 px-5 rounded-lg">
-                Buy Now!
+        <section class="mb-8 text-stone-100 text-center">
+            <a href="/store.html" class="bg-gray-100 hover:bg-stone-100 text-black font-bold py-4 px-5 rounded-lg">
+                Visit The Store!
             </a>
         </section>
 
