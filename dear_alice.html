@@ -10,16 +10,32 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <title>Yuuning | Dear Alice</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5KEB0KYRJ6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5KEB0KYRJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-5KEB0KYRJ6');
-</script>
+      gtag('config', 'G-5KEB0KYRJ6');
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splides = document.querySelectorAll('.splide');
+            splides.forEach(function (splide) {
+                new Splide(splide, {
+                    type: 'loop',
+                    perPage: 1,
+                    perMove: 1,
+                    autoplay: false,
+                    interval: 3000,
+                }).mount();
+            });
+        });
+    </script>
+
 </head>
 
 <body class="bg-stone-900 text-stone-100 p-6">
@@ -65,24 +81,66 @@
          <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-stone-100 text-center">
                 <!-- Softcover -->
                 <div class="bg-stone-800 shadow p-4 shadow-lg rounded-lg">
+                    <div class="splide mb-4" aria-label="Product Images">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img class="w-full object-cover" src="/assets/store/dear_alice_softcover/soft1.jpg" alt="Product Image 2">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-full object-cover" src="/assets/store/dear_alice_softcover/soft2.jpg" alt="Product Image 3">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-full object-cover" src="/assets/store/dear_alice_softcover/soft3.jpg" alt="Product Image 4">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-full object-cover" src="/assets/store/dear_alice_softcover/soft4.jpg" alt="Product Image 5">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <a href="/store.html">
-                        <img src="/assets/store/dear_alice_softcover/soft1.jpg" alt="Softcover" class="w-full mb-4 rounded-lg">
+                        <h3 class="text-xl font-bold underline ">SOFTCOVER</h3>
                     </a>
-                    <h3 class="text-xl font-bold">SOFTCOVER</h3>
                 </div>
+
                 <!-- Hardcover -->
                 <div class="bg-stone-800 shadow p-4 shadow-lg rounded-lg">
+                    <div class="splide mb-4" aria-label="Product Images">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img class="w-full object-cover" src="/assets/store/dear_alice_hardcover/hard0.jpg" alt="Product Image 1">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-full object-cover" src="/assets/store/dear_alice_hardcover/hard1.jpg" alt="Product Image 2">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-full object-cover" src="/assets/store/dear_alice_hardcover/hard2.jpg" alt="Product Image 3">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-full object-cover" src="/assets/store/dear_alice_hardcover/hard3.jpg" alt="Product Image 4">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-full object-cover" src="/assets/store/dear_alice_hardcover/hard4.jpg" alt="Product Image 5">
+                                </li>
+                                <li class="splide__slide">
+                                    <img class="w-full object-cover" src="/assets/store/dear_alice_hardcover/hard6.jpg" alt="Product Image 6">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <a href="/store.html">
-                        <img src="/assets/store/dear_alice_hardcover/hard0.jpg" alt="Hardcover" class="w-full mb-4 rounded-lg">
+                        <h3 class="text-xl font-bold underline">HARDCOVER</h3>
                     </a>
-                    <h3 class="text-xl font-bold">HARDCOVER</h3>
                 </div>
+
                 <!-- E-Book -->
                 <div class="bg-stone-800 shadow p-4 shadow-lg rounded-lg">
-                    <a href="/store.html">
                         <img src="/assets/store/salesjourney/ebook.jpg" alt="E-Book" class="w-full mb-4 rounded-lg">
+                    <a href="https://www.amazon.com/Dear-Alice-yuuning-ebook/dp/B0D5BRH8TZ/ref=tmm_kin_swatch_0">
+                        <h3 class="text-xl font-bold underline">E-BOOK</h3>
                     </a>
-                    <h3 class="text-xl font-bold">E-BOOK</h3>
                 </div>
             </section>
 
